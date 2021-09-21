@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Unit 4 Forms</title>
+    </head>
+    <body>
+
+        <!-- form tag tells where form starts and ends 
+        POST means that entered data becomes accessible on backend -->
+
+        <form action="mailto:cdhanan@syr.edu" method="POST">
+
+            <!-- input is for short text 
+            the value of the `for` attribute in `label` must match the value of the `id` attribute in `input` -->
+
+            <label for="fullname">Full Name: </label>
+            <input type="text" id="fullname" name="fullname">
+
+            <br>
+            <br>
+
+            <!-- textarea is for lots of writing -->
+
+            <label for="complaints">Complaint: </label>
+            <textarea id="complaints" name="complaints">Write your complaints here...</textarea>
+
+            <br>
+            <br>
+
+            <p>How Angry Are You?</p>
+            <label for="level1">Very Angry</label>
+            <input type="radio" id="level1" name="level" value="very angry">
+            <label for="level2">Not Very Angry</label>
+            <input type="radio" id="level2" name="level" value="not very angry">
+
+            <br>
+            <br>
+
+            <label for="contact">Method of Contact</label>
+            <select id="contact" name="contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="snail mail">Snail Mail</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="afterbiz">Call After 5 p.m.?</label>
+            <input type="checkbox" id="afterbiz" name="afterbiz" value="yes">
+
+            <br>
+            <br>
+
+            <input type="submit" value="Send My Complaint">
+
+        </form>
+
+    </body>
+</html>
