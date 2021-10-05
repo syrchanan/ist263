@@ -1,0 +1,18 @@
+p {
+    color: orange;
+    font-size: 150%;
+    /* we are selecting all the paragraphs, changing font & color & size */
+}
+h1 {
+    color: navy;
+    letter-spacing: 1.1em;
+    word-spacing: 1.1em;
+    /* you can look up all different text effects in w3schools */ 
+}
+p, h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p a {
+    /* only changing links inside of p tags */
+    color: black;
+}
