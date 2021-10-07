@@ -1,0 +1,23 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    color: darkslateblue;
+}
+
+.evenrow{
+    background-color: gainsboro;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 1.1em;
+}
