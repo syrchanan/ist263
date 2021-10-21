@@ -34,10 +34,46 @@ nav a:hover {
 }
 
 .header-image {
-    float: left;
-    margin-right: 15px;
+    float: right;
+    margin-left: 10px;
 }
 
 .clear {
     clear: both;
+}
+
+.address {
+    float: left;
+    margin-right: 50px;
+}
+
+.row-1-contact {
+    background-color: #c8c8c8;
+    border-radius: 1em;
+    padding: 20px;
+    margin: 20px;
+}
+
+.row-2-contact {
+    display: flex;
+    margin-top: 30px;
+    background-color: #c8c8c8;
+    border-radius: 1em;
+    margin: 20px;
+}
+
+.map, .form-contact {
+    padding: 20px;
+}
+
+.map {
+    flex: 1;
+    order: 2;
+}
+
+.form-contact {
+    flex: 1;
+    order: 1;
+    display: flex;
+    justify-content: center;
 }
