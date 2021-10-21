@@ -1,0 +1,43 @@
+body {
+    background-color: #DCE0D9;
+    color: #061826;
+}
+
+a:link {
+    color: #028090;
+}
+
+a:visited {
+    color: #003049;
+}
+
+h1 {
+    color: #373F51;
+}
+
+nav {
+    background-color: #a0aaad;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #058eff;
+}
+
+nav a:hover {
+    background-color: #CCCCCC;
+}
+
+.motto {
+    float: right;
+}
+
+.header-image {
+    float: left;
+    margin-right: 15px;
+}
+
+.clear {
+    clear: both;
+}
