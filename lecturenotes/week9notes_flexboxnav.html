@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 10px;
+        }
+
+        .flexrow1 {
+            justify-content: flex-end;
+            margin: 10px;
+
+        }
+
+        .flexrow2 {
+            justify-content: space-around;
+            margin: 10px;
+
+        }
+
+        .flexrow3 {
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .outerflexbox {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Right justified content</p>
+    <div class="flexrow1">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p>Equal space around all flexbox columns</p>
+    <div class="flexrow2">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p>All space distributed between the elements</p>
+    <div class="flexrow3">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p>This is going to put some elements on the left and some on the right -- three flexboxes are used: and outer one with two columns, and one nested flexbox within each column</p>
+    <div class="outerflexbox">
+        <div class="flexrow4">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Products</div>
+            <div>Contact</div>
+        </div>
+        <div class="social">
+            <div>Facebook</div>
+            <div>Twitter</div>
+        </div>
+    </div>
+</body>
+
+</html>

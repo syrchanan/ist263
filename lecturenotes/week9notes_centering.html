@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering</title>
+    <style>
+        p {
+            border: 1px solid purple;
+            /* centers content within the container */
+            text-align: center;
+        }
+        .traditionalcentering {
+            border: 1px solid black;
+            /* centers the container itself by putting equal size margins around a container */
+            width: 30%;
+            margin: 0 auto;
+        }
+        .flexboxcenter {
+            border: 1px solid orange;
+            /* this specifies the row in flexbox */
+            display: flex;
+            /* centers content in a flexbox */
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        Here's how to center text inside a container
+    </p>
+
+    <div class="traditionalcentering">
+        Here is how to center a block level container
+    </div>
+
+    <div class="flexboxcenter">
+        Here is how to center with flexbox
+    </div>
+
+</body>
+
+</html>
