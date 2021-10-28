@@ -117,3 +117,7 @@ aside {
 .dummy-spacing {
     flex: 1;
 }
+
+.image-spacing {
+    width: 35%;
+}
