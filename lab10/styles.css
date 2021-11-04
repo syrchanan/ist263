@@ -22,8 +22,12 @@ nav {
     margin-bottom: 30px;
 }
 
-nav a {
-    color: #058eff;
+nav a:link {
+    color: #003049;
+}
+
+nav a:visited {
+    color: #003049;
 }
 
 nav a:hover {
@@ -37,6 +41,7 @@ nav a:hover {
 .header-image {
     float: right;
     margin-left: 10px;
+    max-width: 100%;
 }
 
 .clear {
@@ -57,6 +62,7 @@ nav a:hover {
 
 .row-2-contact {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
     background-color: #c8c8c8;
     border-radius: 1em;
@@ -81,6 +87,7 @@ nav a:hover {
 
 .flexboxicons {
     display: flex;
+    flex-wrap: wrap;
     flex: 3;
 }
 
@@ -89,6 +96,7 @@ aside {
     color: #CCCCCC;
     border-radius: 1em;
     padding: 10px;
+    align-self: center;
     flex: 1;
     margin-left: 20px;
     margin-right: 50px;
@@ -98,7 +106,7 @@ aside {
     display: flex;
 }
 
-.flexboxicons div{
+.flexboxicons div {
     justify-content: center;
     margin-top: 60px;
     margin-left: 50px;
@@ -120,4 +128,16 @@ aside {
 
 .image-spacing img {
     width: 35%;
+}
+
+@media only screen and (max-width: 1100px) {
+    nav a {
+        display: block;
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    nav span {
+        display: none;
+    }
 }
