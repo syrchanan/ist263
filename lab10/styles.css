@@ -1,0 +1,123 @@
+body {
+    background-color: #DCE0D9;
+    color: #061826;
+}
+
+a:link {
+    color: #028090;
+}
+
+a:visited {
+    color: #003049;
+}
+
+h1 {
+    color: #373F51;
+    text-align: center;
+}
+
+nav {
+    background-color: #a0aaad;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #058eff;
+}
+
+nav a:hover {
+    background-color: #CCCCCC;
+}
+
+.motto {
+    float: right;
+}
+
+.header-image {
+    float: right;
+    margin-left: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.address {
+    float: left;
+    margin-right: 50px;
+}
+
+.row-1-contact {
+    background-color: #c8c8c8;
+    border-radius: 1em;
+    padding: 20px;
+    margin: 20px;
+}
+
+.row-2-contact {
+    display: flex;
+    margin-top: 30px;
+    background-color: #c8c8c8;
+    border-radius: 1em;
+    margin: 20px;
+}
+
+.map, .form-contact {
+    padding: 20px;
+}
+
+.map {
+    flex: 1;
+    order: 2;
+}
+
+.form-contact {
+    flex: 1;
+    order: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.flexboxicons {
+    display: flex;
+    flex: 3;
+}
+
+aside {
+    background-color: #0f5a66;
+    color: #CCCCCC;
+    border-radius: 1em;
+    padding: 10px;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.flexouter {
+    display: flex;
+}
+
+.flexboxicons div{
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.firstflextext {
+    display: flex;
+}
+
+.technical-description {
+    flex: 3;
+    padding: 20px;
+    margin-right: 125px;
+}
+
+.dummy-spacing {
+    flex: 1;
+}
+
+.image-spacing img {
+    width: 35%;
+}
