@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <span>|</span>
+        <a href="collection.html">Collecting Viewership Data</a>
+        <span>|</span>
+        <a href="processing.html">Processing Ratings</a>
+    </nav>
+    <main>
+        <h1>TV Ratings</h1>
+        <summary>
+            <h3>What are they?</h3>
+            <p>
+                Ratings play a pivotal role in the television landscape – whether it is recognized or not. They provide
+                the foundation for all advertising, and therefore all the money, in the industry. When collected, they
+                can provide insight to different demographics of people and their viewing habits. For example, an
+                advertiser may want to target 25–54-year-olds across the country, so they will use ratings to determine
+                which network offers them the biggest group of 25–54-year-olds to reach. In this way, ratings provide
+                the backbone of all television; without them, it would be much harder for news and entertainment
+                companies to make money on TV.
+            </p>
+        </summary>
+        <figure>
+            <img src="../images/watching_tv.jpg" alt="two silhouettes on a television set">
+        </figure>
+        <section>
+            <h3>Contents of a Ratings Report</h3>
+            <p>
+                Measurement for television ratings can be a little tricky, so let’s break it down. When a ratings report
+                is sent to the different national cable networks, they receive information about 10 different
+                categories. Local TV is measured slightly differently, so we’ll just focus on national ratings for the
+                time being. The reported metrics are the: Demographic Group, Playback Period, Projections*, Share* (%),
+                Reach* (%), Average Minute Audience^ (%), Average Commercial Minute^ (%), and Time Spent. Those marked
+                with an asterisk are generally indicators of how many people are watching, and those marked with a caret
+                are indicators of the actual ratings.
+            </p>
+        </section>
+        <section>
+            <p>
+                This all sounds great in theory, but what exactly do the television networks see when the ratings are
+                delivered? An example rating might read:
+            </p>
+            <!-- I am still noting the differences with characters (* and ^) for now until we can use CSS for styling -->
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Delivery</th>
+                </tr>
+                <tr>
+                    <td>Demographic Group</td>
+                    <td>P2+</td>
+                </tr>
+                <tr>
+                    <td>Playback Period</td>
+                    <td>Live + SD</td>
+                </tr>
+                <tr>
+                    <td>Projections*</td>
+                    <td>8,764</td>
+                </tr>
+                <tr>
+                    <td>Share*</td>
+                    <td>10.83%</td>
+                </tr>
+                <tr>
+                    <td>Reach*</td>
+                    <td>24%</td>
+                </tr>
+                <tr>
+                    <td>Average Minute Audience^</td>
+                    <td>3.1%</td>
+                </tr>
+                <tr>
+                    <td>Average Commercial Minute^</td>
+                    <td>2.8%</td>
+                </tr>
+                <tr>
+                    <td>Time Spent^</td>
+                    <td>23</td>
+                </tr>
+            </table>
+        </section>
+        <figure>
+            <img src="../images/analytics.png" alt="a line graph displayed on a computer screen">
+        </figure>
+        <section>
+            <h3>Breaking It Down</h3>
+            <p>
+                Now let’s work through it, metric by metric. To start, the demographic group in the rating is “P2+”,
+                meaning they are tracking how everyone who is two or older interacted with the program. Other popular
+                demographics are 25-54, as well as 18-34, but they can be adjusted to whatever age range suits the
+                network. Next, the playback period is showing “Live + SD”, meaning that this measurement includes anyone
+                who watched the program live or later the same day. There are other options for playback, such as “Live
+                + 7” (anyone who watched it live or within the following seven days). Every other statistic following
+                will only account for the people who meet these two categories, so it’s easiest to think of them as
+                subdivisions.
+            </p>
+            <p>
+                The “How Many” group of measurements consists of Projections, Share, and Reach – let’s dive in.
+                Projections are measure how many people watched an average minute of the program. This measurement is
+                delivered in thousands, so the real number is actually 8,764,000, but it is the raw number of viewers.
+                Next, Share relates how many people who were watching TV at the time, decided to tune in to the program.
+                In our example, a share of 10.83% means 10.83% of all people watching TV viewed the program in question.
+                Reach is identical to Share, except it doesn’t require that they be watching TV at the time, so it
+                includes all the extended viewing. In our example, the playback period is “Live + SD”, so only the live
+                viewers are included in the Share, but the Same Day viewers are added into the Reach measurement.
+            </p>
+            <p>
+                The actual ratings themselves are not too tough to understand, once past the rest of the statistics. The
+                first is Average Minute Audience, which is the percentage of people in the demographic who tuned in to
+                an average minute of the program. In the example, this stat is 3.1%, meaning of all people age two or
+                older, 3.1% of them tuned into the program during the playback period. Next is Average Commercial
+                Minute, which is the same as the previous, except dealing with commercials rather than the program
+                itself. This is typically lower than the average minute audience, as it is in the example, because
+                viewers will tend to change channels during commercial breaks rather than during the program. The last
+                measure in the example is Time Spent, which is simply an average amount of time that viewers spent
+                watching the program. For the example, viewers tuned in for an average of 23 minutes, which is about
+                right for a half hour program (there is typically 22 minutes of content and eight minutes of commercials
+                in a half-hour show).
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="flexouterbox">
+            <div>
+                <form action="mailto:cdhanan@syr.edu" method="post">
+                    <p>
+                        Do you have a question? Ask it below!
+                    </p>
+                    <label for="name">Name: </label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <br>
+                    <label for="email">Email Address: </label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <br>
+                    <label for="phone">Phone Number: </label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+                    <br>
+                    <label for="question">Question: </label><br>
+                    <textarea id="question" name="question">Write your question here...</textarea><br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <span class="more-info">
+                <p>
+                    For more information and a further in-depth study of TV Ratings, visit Nielsen's
+                    <a href="https://ratingsacademy.nielsen.com/" target="_blank">Ratings Academy</a> for more
+                    information.
+                </p>
+            </span>
+            <span class="copyright">
+                &copy; 2021 Connor Hanan
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
