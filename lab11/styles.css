@@ -152,3 +152,7 @@ aside {
 #skiptocontent:focus {
     left: 10px;
 }
+
+.links a:link {
+    color: #0000ac;
+}
