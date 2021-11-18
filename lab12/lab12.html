@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 12</title>
+    <script>
+
+        function winner_message() {
+            document.getElementById("messages").innerHTML = 'You Won!';
+        }
+
+        function try_again() {
+            document.getElementById("messages").innerHTML = 'Wrong Shell - Try Again';
+        }
+        function shuffle_shells() {
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2)
+        }
+    </script>
+    <style>
+        .flexouter {
+            display: flex;
+        }
+        .flexouter img {
+            flex-basis: 10%;
+        }
+        #first {
+            order: 1;
+        }
+        #second {
+            order: 2;
+        }
+        #third {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body onload="shuffle_shells();">
+    <h1>Choose a Walnut</h1>
+    <div class="flexouter">
+        <img id="first" src="https://laferger.github.io/ist263/images/walnut.jpg" alt="first walnut" onclick="winner_message();">
+
+        <img id="second" src="https://laferger.github.io/ist263/images/walnut.jpg" alt="second walnut" onclick="try_again();">
+
+        <img id="third" src="https://laferger.github.io/ist263/images/walnut.jpg" alt="third walnut" onclick="try_again();">
+    </div>
+
+    <div id="messages">
+
+    </div>
+</body>
+
+</html>
