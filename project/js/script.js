@@ -20,3 +20,16 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 });
+
+// map_open_close
+
+function modal_map() {
+    document.getElementById("modal_map").style.display = "block";
+    document.getElementById("open_map").style.display = "none";
+    document.getElementById("close_map").style.display = "block";
+}
+function modal_close() {
+    document.getElementById("modal_map").style.display = "none";
+    document.getElementById("open_map").style.display = "block";
+    document.getElementById("close_map").style.display = "none";
+}

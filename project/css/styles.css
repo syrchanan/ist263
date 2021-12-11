@@ -90,6 +90,11 @@ a:hover {
     #navlinks {
         display: inline;
     }
+
+}
+
+#modal_map, #close_map {
+    display: none;
 }
 
 main {
@@ -97,7 +102,7 @@ main {
     margin: 0 auto 0 20px;
     background-color: #ebebeb;
     border: 1px solid #F9F9F9;
-    /* border-radius: 1em; */
+    border-radius: 1em;
     padding: 5px 30px;
 }
 
@@ -198,7 +203,7 @@ footer a:link, footer a:visited {
         margin: 20px auto;
         background-color: #ebebeb;
         border: 1px solid #F9F9F9;
-        /* border-radius: 1em; */
+        border-radius: 1em;
         padding: 5px 30px;
     }
 
