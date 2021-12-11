@@ -5,107 +5,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <title>Collecting Viewership Data</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <span>|</span>
-        <a href="collection.html">Collecting Viewership Data</a>
-        <span>|</span>
-        <a href="processing.html">Processing Ratings</a>
+        <img src="../images/menu-icon.png" alt="hamburger icon" id="hamicon" onclick="turn_nav_on_off();">
+
+        <img src="../images/x.png" alt="hamburger icon" id="x" onclick="turn_nav_on_off();">
+
+        <div id="navlinks">
+            <a href="index.html">Home</a>
+            <span>|</span>
+            <a href="collection.html">Collecting Viewership Data</a>
+            <span>|</span>
+            <a href="processing.html">Processing Ratings</a>
+        </div>
     </nav>
 
-    <main>
-        <h1>Collecting Viewership Data</h1>
-        <section>
-            <h3>Designated Market Areas</h3>
-            <p>
-                It might seem easy to collect data for television ratings, but the process is more complex than meets
-                the eye. To start, it must be mentioned that the United States is split into DMAs, or Designated Market
-                Areas, for ratings. Since national ratings have been the focus, it will remain there, but these DMAs are
-                still relevant. Each DMA is focused around a major city or a general area – such as New York City or
-                Quincy-Hannibal-Keokuk. Within each area, it would be impractical to track the viewership of every
-                single person, so agencies like Nielsen will create a sample group known as a panel. Panelists are
-                invite-only, since the sample group are specially created in order to match the overall demographics of
-                the area as closely as possible.
-            </p>
-        </section>
-        <figure>
-            <img src="../images/dma_map.svg" alt="map of dma in the US">
-        </figure>
-        <section>
-            <h3>Collection</h3>
-            <p>
-                Once the panel has been made, it is time to collect the actual information of what they are watching. In
-                the past, Nielsen has had the panelists record (by hand in a diary) what they had watched and for how
-                long. This process is slow, both in collecting and processing, so it was recently discarded in favor of
-                all digital alternatives. However, it did give rise to a focused measurement known as “books”. In the
-                past, four times a year the smallest local stations would receive ratings during these periods
-                (February, May, July, and November). These ratings were referred to as books (the November book, the May
-                book, etc.), because they were the only times the diaries would be collected.
-            </p>
-        </section>
-        <figure>
-            <img src="../images/nielsen_original.jpg" alt="personal measuring devices for ratings">
-        </figure>
-        <section>
-            <p>
-                Now, Nielsen has upgraded to using various digital devices. In the top 56 DMAs (top being the largest),
-                the panelists use “People Meters” (variations seen above) and “Set Meters”. These are devices which
-                attach directly to the panelists’ television, measuring all video content that is played on it. In the
-                next 14 largest DMAs, panelists are equipped with “Code Readers”, which are similar in design, but they
-                sit next to the TV rather than be plugged in. The underlying technology that each of the readers and
-                meters use to log viewing is quite interesting. When a TV channel is played on a TV, there is a sound
-                (which cannot be heard by humans) that when decoded, tells the reader or meter which channel is being
-                played. This information, when used in tandem with lists of what each channel is playing in a given day,
-                can be used to figure out exactly what each panelist is watching! The rest of the DMAs are sourced from
-                satellite and cable providers, who anonymize the data before sending it on to Nielsen, so there are
-                fewer demographics available for study in these markets.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <hr>
-        <div class="flexouterbox">
-            <div>
-                <form action="mailto:cdhanan@syr.edu" method="post">
-                    <p>
-                        Do you have a question? Ask it below!
-                    </p>
-                    <label for="name">Name: </label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <br>
-                    <label for="email">Email Address: </label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <br>
-                    <label for="phone">Phone Number: </label><br>
-                    <input type="tel" id="phone" name="phone"><br>
-                    <br>
-                    <label for="question">Question: </label><br>
-                    <textarea id="question" name="question">Write your question here...</textarea><br>
-                    <br>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            <div class="more-info">
+    <div class="pageflex">
+        <main>
+            <h1>Collecting Viewership Data</h1>
+            <section>
+                <h2>Designated Market Areas</h2>
                 <p>
-                    For more information and a further in-depth study of TV Ratings, visit Nielsen's
-                    <a href="https://ratingsacademy.nielsen.com/" target="_blank">Ratings Academy</a> for more
-                    information.
+                    It might seem easy to collect data for television ratings, but the process is more complex than
+                    meets
+                    the eye. To start, it must be mentioned that the United States is split into DMAs, or Designated
+                    Market
+                    Areas, for ratings. Since national ratings have been the focus, it will remain there, but these DMAs
+                    are
+                    still relevant. Each DMA is focused around a major city or a general area – such as New York City or
+                    Quincy-Hannibal-Keokuk. Within each area, it would be impractical to track the viewership of every
+                    single person, so agencies like Nielsen will create a sample group known as a panel. Panelists are
+                    invite-only, since the sample group are specially created in order to match the overall demographics
+                    of
+                    the area as closely as possible.
                 </p>
+            </section>
+            <figure>
+                <img src="../images/dma_map.svg" alt="map of dma in the US">
+            </figure>
+            <section>
+                <h2>Collection</h2>
+                <p>
+                    Once the panel has been made, it is time to collect the actual information of what they are
+                    watching. In
+                    the past, Nielsen has had the panelists record (by hand in a diary) what they had watched and for
+                    how
+                    long. This process is slow, both in collecting and processing, so it was recently discarded in favor
+                    of
+                    all digital alternatives. However, it did give rise to a focused measurement known as “books”. In
+                    the
+                    past, four times a year the smallest local stations would receive ratings during these periods
+                    (February, May, July, and November). These ratings were referred to as books (the November book, the
+                    May
+                    book, etc.), because they were the only times the diaries would be collected.
+                </p>
+            </section>
+            <figure>
+                <img src="../images/nielsen_original.jpg" alt="personal measuring devices for ratings">
+            </figure>
+            <section>
+                <p>
+                    Now, Nielsen has upgraded to using various digital devices. In the top 56 DMAs (top being the
+                    largest),
+                    the panelists use “People Meters” (variations seen above) and “Set Meters”. These are devices which
+                    attach directly to the panelists’ television, measuring all video content that is played on it. In
+                    the
+                    next 14 largest DMAs, panelists are equipped with “Code Readers”, which are similar in design, but
+                    they
+                    sit next to the TV rather than be plugged in. The underlying technology that each of the readers and
+                    meters use to log viewing is quite interesting. When a TV channel is played on a TV, there is a
+                    sound
+                    (which cannot be heard by humans) that when decoded, tells the reader or meter which channel is
+                    being
+                    played. This information, when used in tandem with lists of what each channel is playing in a given
+                    day,
+                    can be used to figure out exactly what each panelist is watching! The rest of the DMAs are sourced
+                    from
+                    satellite and cable providers, who anonymize the data before sending it on to Nielsen, so there are
+                    fewer demographics available for study in these markets.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <h2>
+                Do you have a question? Ask it below!
+            </h2>
+            <div class="flexouterbox">
+                <div class="form-box">
+                    <form action="mailto:cdhanan@syr.edu" method="post" id="questionform">
+                        <div>
+                            <label for="name">Name: </label><br>
+                            <input type="text" id="name" name="name">
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <label for="email">Email Address: </label><br>
+                            <input type="email" id="email" name="email">
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number: </label><br>
+                            <input type="tel" id="phone" name="phone">
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <label for="question">Question: </label><br>
+                            <textarea id="question" name="question"></textarea>
+                            <br>
+                            <br>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="more-info">
+                    <p class="nielsen-link">
+                        For more information and a further in-depth study of TV Ratings, visit Nielsen's
+                        <a href="https://ratingsacademy.nielsen.com/" target="_blank">Ratings Academy</a> for more
+                        information.
+                    </p>
+                </div>
             </div>
-            <span class="copyright">
+            <p class="copyright">
                 &copy; 2021 Connor Hanan
-            </span>
-        </div>
-    </footer>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>

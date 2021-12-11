@@ -1,20 +1,37 @@
 body {
     margin: 0;
     background-color: #f7f7f7;
+    font-size: 18px;
 }
 
 nav {
     background-color: #6370a0;
-    padding: 20px 10px 20px 10px;
+    padding: 20px;
     color: #f7f7f7;
 }
 
 nav a:link, nav a:visited {
     color: #f7f7f7;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: #f3dbc0;
+    text-decoration-color: #ebebeb;
+}
+
+nav img {
+    width: 30px;
+    margin: 10px auto 10px 0px;
+}
+
+a:link, a:visited {
+    color: #000000;
+    text-decoration-color: #efba7e;
 }
 
 a:hover {
-    color: #ebebeb;
+    color: #6370a0;
     text-decoration-color: #efba7e;
 }
 
@@ -24,12 +41,63 @@ a:hover {
     align-items: flex-start;
 }
 
+#hamicon {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    nav span {
+        display: none;
+    }
+
+    #hamicon {
+        display: block;
+    }
+
+    #x {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 0px;
+    }
+
+    #navlinks {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 801px) {
+    nav span {
+        display: inline;
+    }
+
+    #hamicon {
+        display: none;
+    }
+
+    #x {
+        display: none;
+    }
+
+    nav a {
+        display: inline;
+        padding: 10px 0px;
+    }
+
+    #navlinks {
+        display: inline;
+    }
+}
+
 main {
     flex-basis: 70%;
-    margin: 20px auto 20px 20px;
+    margin: 0 auto 0 20px;
     background-color: #ebebeb;
     border: 1px solid #F9F9F9;
-    border-radius: 1em;
+    /* border-radius: 1em; */
     padding: 5px 30px;
 }
 
@@ -60,7 +128,7 @@ h2 {
 
 p {
     font-family: 'Inter', Tahoma, sans-serif;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 table {
@@ -75,8 +143,8 @@ th, td {
     padding: 8px;
 }
 
-tr:nth-child(even) {
-    background-color: #94acba;
+tr:nth-child(odd) {
+    background-color: #b2c5cf;
 }
 
 footer {
@@ -130,7 +198,7 @@ footer a:link, footer a:visited {
         margin: 20px auto;
         background-color: #ebebeb;
         border: 1px solid #F9F9F9;
-        border-radius: 1em;
+        /* border-radius: 1em; */
         padding: 5px 30px;
     }
 
@@ -147,7 +215,7 @@ footer a:link, footer a:visited {
         color: #f7f7f7;
         font-family: Tahoma, sans-serif;
         line-height: 20px;
-    }    
+    }
 
     .form-box {
         display: flex;
@@ -156,7 +224,7 @@ footer a:link, footer a:visited {
         justify-content: center;
         padding: 10px;
     }
-    
+
     .more-info {
         flex: 2;
         order: 1;
