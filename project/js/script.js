@@ -15,10 +15,10 @@ function turn_nav_on_off() {
 
 }
 
-$(document).ready(function(){
-	$('#nav-icon3').click(function(){
-		$(this).toggleClass('open');
-	});
+$(document).ready(function () {
+    $('#nav-icon3').click(function () {
+        $(this).toggleClass('open');
+    });
 });
 
 // map_open_close
@@ -61,7 +61,7 @@ function dark_mode() {
 
 function load_mode() {
     const mode = localStorage.getItem("mode");
-    if(mode == "dark") {
+    if (mode == "dark") {
         dark_mode();
     }
     else {
