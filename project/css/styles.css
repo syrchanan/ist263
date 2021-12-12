@@ -67,6 +67,19 @@ a:hover {
         display: none;
     }
 
+    .darkmode #dark {
+        position: absolute;
+        top: 2%;
+        right: 1%;
+    }
+
+    .darkmode #light {
+        display: none;
+        position: absolute;
+        top: 2%;
+        right: 1%;
+    }
+
 }
 
 @media only screen and (min-width: 801px) {
@@ -89,6 +102,19 @@ a:hover {
 
     #navlinks {
         display: inline;
+    }
+
+    .darkmode #dark {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+    }
+
+    .darkmode #light {
+        display: none;
+        position: absolute;
+        top: 1%;
+        right: 1%;
     }
 
 }

@@ -14,8 +14,8 @@
     <script src="../js/script.js"></script>
 </head>
 
-<body>
-    <a id="skiptocontent" href="#content_1" tabindex="1">Skip to Content</a>
+<body onload="load_mode();">
+    <a id="skiptocontent" href="#content_home" tabindex="1">Skip to Content</a>
     <nav>
         <img src="../images/menu-icon.png" alt="hamburger icon" id="hamicon" onclick="turn_nav_on_off();">
 
@@ -28,11 +28,18 @@
             <span>|</span>
             <a href="processing.html">Processing Ratings</a>
         </div>
+
+        <div class="darkmode">
+            <img id="dark" onclick="dark_mode();" src="../images/dark_mode.png"
+                alt="moon button for toggling dark mode on">
+            <img id="light" onclick="light_mode();" src="../images/light_mode.png"
+                alt="moon button for toggling dark mode off">
+        </div>
     </nav>
 
     <div class="pageflex">
-        <a id="content_1"></a>
-        <main>
+        <a id="content_home"></a>
+        <main id="main">
             <h1>TV Ratings</h1>
             <section>
                 <h2>What are they?</h2>
